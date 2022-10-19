@@ -5,13 +5,12 @@ import sys
 def fullboard():
  for r in table:
     for c in r:
-        if(table[s][p]=="x" or table[s][p]=="o" ):
+        if(table[s][p]=="x" or table[s][p]=="o" ): # map(int, input().split())
             print("it is a tie")
         else:
             return
 def askinput():
-   s=int(input("enter the first coordinate"))
-   p=int(input("enter the second coordinate"))
+   s,p=map(int,input("enter the coordinates").split())
    if (n==1):
       table[s][p]="x"
       for r in table:
