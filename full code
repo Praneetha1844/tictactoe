@@ -1,6 +1,7 @@
 import random
 import array as arr
 from array import *
+import sys
 def fullboard():
  for r in table:
     for c in r:
@@ -26,36 +27,52 @@ def askinput():
 def checking():
     if (table[0][0]=="x" and table[0][1]=="x" and table[0][2]=="x"):
         print("player 1 won")
+        exit()
     elif (table[1][0]=="x" and table[1][1]=="x" and table[1][2]=="x"):
         print("player 1 won")
+        exit()
     elif (table[2][0]=="x" and table[2][1]=="x" and table[2][2]=="x"):
         print("player 1 won")
+        exit()
     elif (table[0][0]=="x" and table[1][0]=="x" and table[2][0]=="x"):
         print("player 1 won")
+        exit()
     elif (table[0][1]=="x" and table[1][1]=="x" and table[2][1]=="x"):
         print("player 1 won")
+        exit()
     elif (table[0][2]=="x" and table[1][2]=="x" and table[2][2]=="x"):
         print("player 1 won")
+        exit()
     elif (table[0][0]=="x" and table[1][1]=="x" and table[2][2]=="x"):
         print("player 1 won")
+        exit()
     elif (table[0][2]=="x" and table[1][1]=="x" and table[2][0]=="x"):
         print("player 1 won")
+        exit()
     elif (table[0][0]=="o" and table[0][1]=="o" and table[0][2]=="o"):    #2nd player winning
         print("player 2 won")
+        exit()
     elif (table[1][0]=="o" and table[1][1]=="o" and table[1][2]=="o"):
         print("player 2 won")
+        exit()
     elif (table[2][0]=="o" and table[2][1]=="o" and table[2][2]=="o"):
         print("player 2 won")
+        exit()
     elif (table[0][0]=="o" and table[1][0]=="o" and table[2][0]=="o"):
         print("player 2 won")
+        exit()
     elif (table[0][1]=="o" and table[1][1]=="o" and table[2][1]=="o"):
         print("player 2 won")
+        exit()
     elif (table[0][2]=="o" and table[1][2]=="o" and table[2][2]=="o"):
         print("player 2 won")
+        exit()
     elif (table[0][0]=="o" and table[1][1]=="o" and table[2][2]=="o"):
         print("player 2 won")
+        exit()
     elif (table[0][2]=="o" and table[1][1]=="o" and table[2][0]=="o"):
         print("player 2 won")
+        exit()
     else:
         return
 table=[["-","-","-"],["-","-","-"],["-","-","-"]]
@@ -78,3 +95,4 @@ for i in range(0,9):
     print("its player 1's turn")
     askinput()
     checking()
+
