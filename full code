@@ -84,7 +84,7 @@ n=random.randint(1, 2)
 print("player",n,"enter the coordinates")
 askinput()
 checking()
-for i in range(0,9):
+for i in range(0,8):
   if(n==1):
     n=2
     print("its player 2's turn")
@@ -95,4 +95,9 @@ for i in range(0,9):
     print("its player 1's turn")
     askinput()
     checking()
+print("it is a tie")
+
+
+
+
 
